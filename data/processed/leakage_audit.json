@@ -1,0 +1,76 @@
+{
+  "A_safe_historical": [
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_30",
+    "rolling_std_7",
+    "rolling_std_30",
+    "rolling_min_7",
+    "rolling_max_7"
+  ],
+  "B_known_in_advance": [
+    "year",
+    "month",
+    "quarter",
+    "day",
+    "day_of_week",
+    "week_of_year",
+    "is_weekend",
+    "day_of_month",
+    "is_month_start",
+    "is_month_end",
+    "Category"
+  ],
+  "C_potentially_leaky": [
+    "Stock_On_Hand",
+    "Selling_Price",
+    "Cost_Price",
+    "Units",
+    "Customer_Age",
+    "Customer_Gender",
+    "Loyalty_Flag",
+    "Lead_Time_Days",
+    "Reorder_Level"
+  ],
+  "D_target_derived": [
+    "Revenue",
+    "Cost",
+    "Margin",
+    "Margin_%"
+  ],
+  "used_in_model": [
+    "year",
+    "month",
+    "quarter",
+    "day",
+    "day_of_week",
+    "week_of_year",
+    "is_weekend",
+    "day_of_month",
+    "is_month_start",
+    "is_month_end",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_30",
+    "rolling_std_7",
+    "rolling_std_30",
+    "rolling_min_7",
+    "rolling_max_7",
+    "Category"
+  ],
+  "excluded_and_why": {
+    "same-day Revenue/Units/Margin/prices": "These are the outcome or are realized with the sale. Using them to predict same-day revenue is leakage.",
+    "Stock_On_Hand / Reorder_Level / Lead_Time_Days": "Inventory fields are recorded at invoice level. Aggregating them to a daily category forecast grain is ambiguous, and same-day stock is not treated as known at prediction time.",
+    "Customer_Age / Customer_Gender / Loyalty_Flag": "Future customer mix is not known in advance. Age is also ~40% missing and is never imputed.",
+    "Brand / Channel / Store_Format / City / Payment_Mode": "Not part of the selected Date \u00d7 Category grain. Used in analytics and for top-down allocation shares, not as contemporaneous XGBoost features."
+  },
+  "rolling_implementation": "All rolling statistics use revenue.shift(1).rolling(window) so the current target is excluded."
+}

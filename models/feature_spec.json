@@ -1,0 +1,42 @@
+{
+  "feature_columns": [
+    "year",
+    "month",
+    "quarter",
+    "day",
+    "day_of_week",
+    "week_of_year",
+    "is_weekend",
+    "day_of_month",
+    "is_month_start",
+    "is_month_end",
+    "lag_1",
+    "lag_7",
+    "lag_14",
+    "lag_30",
+    "rolling_mean_7",
+    "rolling_mean_14",
+    "rolling_mean_30",
+    "rolling_std_7",
+    "rolling_std_30",
+    "rolling_min_7",
+    "rolling_max_7",
+    "Category"
+  ],
+  "category_encoder": {
+    "Beverages": 0,
+    "Dairy": 1,
+    "Fruits": 2,
+    "Grocery": 3,
+    "Home Care": 4,
+    "Personal Care": 5,
+    "Snacks": 6,
+    "Vegetables": 7
+  },
+  "target": "Revenue",
+  "grain": [
+    "Date",
+    "Category"
+  ],
+  "model_path": "E:\\Philips\\Sales_Forecasting\\models\\xgboost_sales_model.json"
+}

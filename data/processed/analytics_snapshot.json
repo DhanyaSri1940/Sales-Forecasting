@@ -1,0 +1,479 @@
+{
+  "kpis": {
+    "total_revenue": 39335134.98467634,
+    "total_units": 299829,
+    "total_cost": 31461449.329379447,
+    "total_margin": 7873685.655296897,
+    "average_margin_pct": 0.20016928017062158,
+    "average_selling_price": 131.1073532983569,
+    "average_invoice_value": 393.3513498467634,
+    "invoice_count": 100000,
+    "city_count": 8,
+    "category_count": 8,
+    "brand_count": 8,
+    "latest_mom_revenue_growth_pct": 0.8930839594958551,
+    "date_min": "2024-01-01",
+    "date_max": "2024-12-30",
+    "customer_age_available_count": 59919,
+    "customer_age_missing_count": 40081,
+    "customer_gender_missing_count": 5048
+  },
+  "monthly_revenue": [
+    {
+      "Month": "2024-01",
+      "Revenue": 3365380.559399135,
+      "Units": 25706,
+      "MoM_Revenue_Growth_%": NaN
+    },
+    {
+      "Month": "2024-02",
+      "Revenue": 3140896.094813788,
+      "Units": 23686,
+      "MoM_Revenue_Growth_%": -6.670403558325278
+    },
+    {
+      "Month": "2024-03",
+      "Revenue": 3350248.056533576,
+      "Units": 25489,
+      "MoM_Revenue_Growth_%": 6.66535776415742
+    },
+    {
+      "Month": "2024-04",
+      "Revenue": 3280835.9847445744,
+      "Units": 24884,
+      "MoM_Revenue_Growth_%": -2.0718487293391874
+    },
+    {
+      "Month": "2024-05",
+      "Revenue": 3346824.1754780477,
+      "Units": 25329,
+      "MoM_Revenue_Growth_%": 2.011322450750641
+    },
+    {
+      "Month": "2024-06",
+      "Revenue": 3175117.85367505,
+      "Units": 24171,
+      "MoM_Revenue_Growth_%": -5.1304255258187155
+    },
+    {
+      "Month": "2024-07",
+      "Revenue": 3346063.4264187715,
+      "Units": 25449,
+      "MoM_Revenue_Growth_%": 5.383912680465075
+    },
+    {
+      "Month": "2024-08",
+      "Revenue": 3375015.0576065946,
+      "Units": 25521,
+      "MoM_Revenue_Growth_%": 0.8652445425641364
+    },
+    {
+      "Month": "2024-09",
+      "Revenue": 3211407.606033878,
+      "Units": 24868,
+      "MoM_Revenue_Growth_%": -4.8476065670871265
+    },
+    {
+      "Month": "2024-10",
+      "Revenue": 3330184.2485516206,
+      "Units": 25617,
+      "MoM_Revenue_Growth_%": 3.6985850782247143
+    },
+    {
+      "Month": "2024-11",
+      "Revenue": 3192325.88550153,
+      "Units": 24338,
+      "MoM_Revenue_Growth_%": -4.139661735234279
+    },
+    {
+      "Month": "2024-12",
+      "Revenue": 3220836.035919778,
+      "Units": 24771,
+      "MoM_Revenue_Growth_%": 0.8930839594958551
+    }
+  ],
+  "categories": [
+    {
+      "Category": "Fruits",
+      "Revenue": 4985417.895373459,
+      "Units": 38195,
+      "Cost": 3992080.6385162924,
+      "Margin": 993337.2568571669,
+      "Invoices": 12708,
+      "Revenue_Share_%": 12.67421072106556,
+      "Margin_%": 0.19924854399447606
+    },
+    {
+      "Category": "Grocery",
+      "Revenue": 4947363.17288924,
+      "Units": 37400,
+      "Cost": 3950728.37809099,
+      "Margin": 996634.7947982507,
+      "Invoices": 12412,
+      "Revenue_Share_%": 12.577465857983118,
+      "Margin_%": 0.20144767221853657
+    },
+    {
+      "Category": "Snacks",
+      "Revenue": 4942554.656213486,
+      "Units": 37418,
+      "Cost": 3950442.424035193,
+      "Margin": 992112.2321782926,
+      "Invoices": 12514,
+      "Revenue_Share_%": 12.565241375525824,
+      "Margin_%": 0.20072863148434142
+    },
+    {
+      "Category": "Beverages",
+      "Revenue": 4941030.170633113,
+      "Units": 37863,
+      "Cost": 3957791.897414646,
+      "Margin": 983238.2732184674,
+      "Invoices": 12585,
+      "Revenue_Share_%": 12.561365742250466,
+      "Margin_%": 0.1989945900477028
+    },
+    {
+      "Category": "Home Care",
+      "Revenue": 4931420.475712174,
+      "Units": 37790,
+      "Cost": 3949046.6349785673,
+      "Margin": 982373.8407336064,
+      "Invoices": 12630,
+      "Revenue_Share_%": 12.536935433508212,
+      "Margin_%": 0.19920707341260255
+    },
+    {
+      "Category": "Vegetables",
+      "Revenue": 4915301.876305563,
+      "Units": 37381,
+      "Cost": 3929553.8728198214,
+      "Margin": 985748.0034857421,
+      "Invoices": 12472,
+      "Revenue_Share_%": 12.495957820458479,
+      "Margin_%": 0.200546788028948
+    },
+    {
+      "Category": "Personal Care",
+      "Revenue": 4884187.447460446,
+      "Units": 37012,
+      "Cost": 3902600.4682383123,
+      "Margin": 981586.9792221332,
+      "Invoices": 12409,
+      "Revenue_Share_%": 12.416856963534412,
+      "Margin_%": 0.2009724216732332
+    },
+    {
+      "Category": "Dairy",
+      "Revenue": 4787859.290088863,
+      "Units": 36770,
+      "Cost": 3829205.015285626,
+      "Margin": 958654.274803237,
+      "Invoices": 12270,
+      "Revenue_Share_%": 12.171966085673922,
+      "Margin_%": 0.20022607531255252
+    }
+  ],
+  "cities": [
+    {
+      "City": "Kolkata",
+      "Revenue": 4999465.154619378,
+      "Units": 38049,
+      "Cost": 4000836.4527256154,
+      "Margin": 998628.7018937628,
+      "Invoices": 12681,
+      "Revenue_Share_%": 12.709922456264616,
+      "Margin_%": 0.1997471071422621
+    },
+    {
+      "City": "Delhi",
+      "Revenue": 4985262.213909289,
+      "Units": 37946,
+      "Cost": 3988230.2316151303,
+      "Margin": 997031.9822941583,
+      "Invoices": 12649,
+      "Revenue_Share_%": 12.673814938861607,
+      "Margin_%": 0.19999589580511085
+    },
+    {
+      "City": "Hyderabad",
+      "Revenue": 4950786.974290205,
+      "Units": 37568,
+      "Cost": 3961237.0560421874,
+      "Margin": 989549.9182480179,
+      "Invoices": 12440,
+      "Revenue_Share_%": 12.586170039123715,
+      "Margin_%": 0.19987729696042714
+    },
+    {
+      "City": "Chennai",
+      "Revenue": 4900659.087573214,
+      "Units": 37533,
+      "Cost": 3917686.243344532,
+      "Margin": 982972.844228683,
+      "Invoices": 12467,
+      "Revenue_Share_%": 12.458732096590866,
+      "Margin_%": 0.2005797233929706
+    },
+    {
+      "City": "Pune",
+      "Revenue": 4899356.639208068,
+      "Units": 37018,
+      "Cost": 3912240.2218784825,
+      "Margin": 987116.4173295853,
+      "Invoices": 12403,
+      "Revenue_Share_%": 12.455420938854523,
+      "Margin_%": 0.20147878385296375
+    },
+    {
+      "City": "Mumbai",
+      "Revenue": 4897600.177395217,
+      "Units": 37273,
+      "Cost": 3913455.5073937317,
+      "Margin": 984144.6700014852,
+      "Invoices": 12492,
+      "Revenue_Share_%": 12.450955562509595,
+      "Margin_%": 0.20094426542693025
+    },
+    {
+      "City": "Ahmedabad",
+      "Revenue": 4877774.66926802,
+      "Units": 37209,
+      "Cost": 3906317.9880700074,
+      "Margin": 971456.6811980128,
+      "Invoices": 12436,
+      "Revenue_Share_%": 12.400554036914425,
+      "Margin_%": 0.1991598109930309
+    },
+    {
+      "City": "Bengaluru",
+      "Revenue": 4824230.068412952,
+      "Units": 37233,
+      "Cost": 3861445.628309761,
+      "Margin": 962784.4401031907,
+      "Invoices": 12432,
+      "Revenue_Share_%": 12.264429930880652,
+      "Margin_%": 0.1995726626735947
+    }
+  ],
+  "brands": [
+    {
+      "Brand": "ITC",
+      "Revenue": 5019512.899387723,
+      "Units": 38083,
+      "Cost": 4014102.7880227906,
+      "Margin": 1005410.1113649324,
+      "Invoices": 12649,
+      "Revenue_Share_%": 12.760888964390634,
+      "Margin_%": 0.20030033421919718
+    },
+    {
+      "Brand": "HUL",
+      "Revenue": 4967523.367369607,
+      "Units": 37745,
+      "Cost": 3974089.6666687415,
+      "Margin": 993433.7007008654,
+      "Invoices": 12572,
+      "Revenue_Share_%": 12.628718242113035,
+      "Margin_%": 0.19998571264434864
+    },
+    {
+      "Brand": "Britannia",
+      "Revenue": 4942030.332142392,
+      "Units": 37602,
+      "Cost": 3959964.3429909446,
+      "Margin": 982065.9891514478,
+      "Invoices": 12497,
+      "Revenue_Share_%": 12.563908409282549,
+      "Margin_%": 0.19871711081257523
+    },
+    {
+      "Brand": "Nestle",
+      "Revenue": 4941904.040222214,
+      "Units": 37559,
+      "Cost": 3950664.682611053,
+      "Margin": 991239.3576111604,
+      "Invoices": 12560,
+      "Revenue_Share_%": 12.563587342835902,
+      "Margin_%": 0.20057843081198096
+    },
+    {
+      "Brand": "Amul",
+      "Revenue": 4937874.0685137315,
+      "Units": 37597,
+      "Cost": 3941215.522607075,
+      "Margin": 996658.5459066568,
+      "Invoices": 12521,
+      "Revenue_Share_%": 12.553342121330873,
+      "Margin_%": 0.20183960386147407
+    },
+    {
+      "Brand": "Tata",
+      "Revenue": 4868135.993845061,
+      "Units": 37331,
+      "Cost": 3892569.8061071597,
+      "Margin": 975566.187737902,
+      "Invoices": 12461,
+      "Revenue_Share_%": 12.376050052304448,
+      "Margin_%": 0.20039830213686333
+    },
+    {
+      "Brand": "PepsiCo",
+      "Revenue": 4853369.560299481,
+      "Units": 37205,
+      "Cost": 3886674.7471215944,
+      "Margin": 966694.813177887,
+      "Invoices": 12507,
+      "Revenue_Share_%": 12.338509991614858,
+      "Margin_%": 0.19918013684460417
+    },
+    {
+      "Brand": "Parle",
+      "Revenue": 4804784.722896134,
+      "Units": 36707,
+      "Cost": 3842167.7732500895,
+      "Margin": 962616.9496460442,
+      "Invoices": 12233,
+      "Revenue_Share_%": 12.214994876127712,
+      "Margin_%": 0.20034548999852317
+    }
+  ],
+  "channels": [
+    {
+      "Channel": "Omnichannel",
+      "Revenue": 13162992.40058178,
+      "Units": 100280,
+      "Cost": 10525131.155034626,
+      "Margin": 2637861.2455471554,
+      "Invoices": 33383,
+      "Revenue_Share_%": 33.46370212205867,
+      "Margin_%": 0.20039981527532955
+    },
+    {
+      "Channel": "Online",
+      "Revenue": 13117659.01359269,
+      "Units": 99851,
+      "Cost": 10491154.248963661,
+      "Margin": 2626504.764629028,
+      "Invoices": 33255,
+      "Revenue_Share_%": 33.348453027307244,
+      "Margin_%": 0.20022663814537403
+    },
+    {
+      "Channel": "Offline",
+      "Revenue": 13054483.570501873,
+      "Units": 99698,
+      "Cost": 10445163.925381161,
+      "Margin": 2609319.645120713,
+      "Invoices": 33362,
+      "Revenue_Share_%": 33.18784485063408,
+      "Margin_%": 0.19987919330771342
+    }
+  ],
+  "store_formats": [
+    {
+      "Store_Format": "Hyper",
+      "Revenue": 13225626.23778147,
+      "Units": 100671,
+      "Cost": 10581090.411555227,
+      "Margin": 2644535.8262262433,
+      "Invoices": 33443,
+      "Revenue_Share_%": 33.62293339767039,
+      "Margin_%": 0.19995543338973493
+    },
+    {
+      "Store_Format": "Super",
+      "Revenue": 13099594.733096946,
+      "Units": 99261,
+      "Cost": 10473499.787160592,
+      "Margin": 2626094.9459363543,
+      "Invoices": 33243,
+      "Revenue_Share_%": 33.30252899399,
+      "Margin_%": 0.20047146491496878
+    },
+    {
+      "Store_Format": "Express",
+      "Revenue": 13009914.01379793,
+      "Units": 99897,
+      "Cost": 10406859.13066363,
+      "Margin": 2603054.8831342985,
+      "Invoices": 33314,
+      "Revenue_Share_%": 33.07453760833961,
+      "Margin_%": 0.20008240487781667
+    }
+  ],
+  "payment_modes": [
+    {
+      "Payment_Mode": "UPI",
+      "Revenue": 9906215.677268362,
+      "Units": 75527,
+      "Cost": 7922747.91092046,
+      "Margin": 1983467.7663479024,
+      "Invoices": 25236,
+      "Revenue_Share_%": 25.184140542869603,
+      "Margin_%": 0.2002245691964223
+    },
+    {
+      "Payment_Mode": "Card",
+      "Revenue": 9857940.545995867,
+      "Units": 75322,
+      "Cost": 7884579.242977421,
+      "Margin": 1973361.3030184454,
+      "Invoices": 25127,
+      "Revenue_Share_%": 25.06141277978629,
+      "Margin_%": 0.20017987467169218
+    },
+    {
+      "Payment_Mode": "Wallet",
+      "Revenue": 9828282.149918046,
+      "Units": 74871,
+      "Cost": 7862659.362423276,
+      "Margin": 1965622.7874947707,
+      "Invoices": 24888,
+      "Revenue_Share_%": 24.98601353153311,
+      "Margin_%": 0.19999657697160855
+    },
+    {
+      "Payment_Mode": "Cash",
+      "Revenue": 9742696.61149407,
+      "Units": 74109,
+      "Cost": 7791462.8130582925,
+      "Margin": 1951233.7984357777,
+      "Invoices": 24749,
+      "Revenue_Share_%": 24.768433145810988,
+      "Margin_%": 0.20027656369118432
+    }
+  ],
+  "loyalty": [
+    {
+      "Loyalty_Flag": 0,
+      "Revenue": 27581482.43602666,
+      "Units": 210364,
+      "Cost": 22061236.156021457,
+      "Margin": 5520246.280005202,
+      "Invoices": 70280,
+      "Revenue_Share_%": 70.11920118431392,
+      "Margin_%": 0.20014320451444303
+    },
+    {
+      "Loyalty_Flag": 1,
+      "Revenue": 11753652.548649684,
+      "Units": 89465,
+      "Cost": 9400213.17335799,
+      "Margin": 2353439.375291694,
+      "Invoices": 29720,
+      "Revenue_Share_%": 29.88079881568606,
+      "Margin_%": 0.20023047010710457
+    }
+  ],
+  "unavailable_fields": [
+    "Discount",
+    "Advertising_Spend",
+    "Marketing_Spend",
+    "Holiday",
+    "Weather",
+    "Customer_Traffic",
+    "Returns",
+    "Wastage"
+  ]
+}

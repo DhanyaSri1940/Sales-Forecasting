@@ -1,0 +1,9 @@
+Category,avg_stock,avg_reorder,avg_lead,typical_daily_sales,days_of_stock,Forecasted_Revenue,status,why
+Fruits,274.0,49.42847025495751,8.5,13.0,21.0,402254.345703125,Needs attention,"Fewer days of stock than most categories, and a higher sales forecast."
+Grocery,273.0,49.729616500161136,8.50797615211086,13.0,21.0,401083.6376953125,Needs attention,"Fewer days of stock than most categories, and a higher sales forecast."
+Beverages,274.0,49.38792212951927,8.54104092173222,13.0,21.0,395859.171875,Watch,Fewer days of stock than most categories.
+Home Care,274.0,49.36104513064133,8.466904196357879,13.0,21.0,397671.8701171875,Watch,Fewer days of stock than most categories.
+Vegetables,274.0,49.36241180243746,8.51074406670943,13.0,21.0,403522.8779296875,Watch,Higher 30-day sales forecast than most categories.
+Dairy,274.0,49.45753871230644,8.549307253463732,13.0,22.0,399653.8564453125,Watch,Higher 30-day sales forecast than most categories.
+Personal Care,275.0,49.45039890402128,8.519381094366992,13.0,21.0,395674.1904296875,In good shape,Stock cover and forecast are both in line with other categories.
+Snacks,274.0,49.56776410420329,8.540274892120825,13.0,21.0,398807.9873046875,In good shape,Stock cover and forecast are both in line with other categories.

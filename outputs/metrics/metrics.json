@@ -1,0 +1,192 @@
+{
+  "split": {
+    "dataset_date_range": [
+      "2024-01-01",
+      "2024-12-30"
+    ],
+    "train": "through 2024-10-31",
+    "validation": "2024-11-01 through 2024-11-30",
+    "test": "2024-12-01 through 2024-12-30",
+    "limitation": "The supplied file covers a single simulated year (2024). A multi-year holdout is not available and is not fabricated. Chronological train/validation/test within 2024 is used instead, plus TimeSeriesSplit on the training window.",
+    "train_rows": 2200,
+    "valid_rows": 240,
+    "test_rows": 240,
+    "best_iteration": 10
+  },
+  "xgboost_train": {
+    "MAE": 2152.4724,
+    "RMSE": 2739.6038,
+    "MAPE": 17.3857,
+    "WAPE": 15.9606
+  },
+  "xgboost_validation": {
+    "MAE": 2309.3724,
+    "RMSE": 2910.9015,
+    "MAPE": 18.3544,
+    "WAPE": 17.3619
+  },
+  "xgboost_test": {
+    "MAE": 2302.847,
+    "RMSE": 2904.1152,
+    "MAPE": 18.4538,
+    "WAPE": 17.1596
+  },
+  "comparison_test": [
+    {
+      "Model": "Naive previous-period",
+      "MAE": 3152.0635,
+      "RMSE": 4011.7811,
+      "MAPE": 24.721,
+      "WAPE": 23.4875
+    },
+    {
+      "Model": "Moving average (7-day)",
+      "MAE": 2466.6974,
+      "RMSE": 3121.895,
+      "MAPE": 19.7052,
+      "WAPE": 18.3805
+    },
+    {
+      "Model": "Seasonal naive (7-day)",
+      "MAE": 3222.0415,
+      "RMSE": 4078.5765,
+      "MAPE": 25.5038,
+      "WAPE": 24.009
+    },
+    {
+      "Model": "XGBoost",
+      "MAE": 2302.847,
+      "RMSE": 2904.1152,
+      "MAPE": 18.4538,
+      "WAPE": 17.1596
+    }
+  ],
+  "feature_importance": [
+    {
+      "feature": "rolling_std_30",
+      "gain": 55685596.0
+    },
+    {
+      "feature": "rolling_mean_7",
+      "gain": 49577372.0
+    },
+    {
+      "feature": "rolling_mean_14",
+      "gain": 49526040.0
+    },
+    {
+      "feature": "rolling_max_7",
+      "gain": 44739648.0
+    },
+    {
+      "feature": "day_of_week",
+      "gain": 44655924.0
+    },
+    {
+      "feature": "rolling_std_7",
+      "gain": 43715564.0
+    },
+    {
+      "feature": "lag_7",
+      "gain": 41911032.0
+    },
+    {
+      "feature": "lag_14",
+      "gain": 41030076.0
+    },
+    {
+      "feature": "lag_30",
+      "gain": 39556144.0
+    },
+    {
+      "feature": "Category",
+      "gain": 39213268.0
+    },
+    {
+      "feature": "rolling_mean_30",
+      "gain": 38675276.0
+    },
+    {
+      "feature": "rolling_min_7",
+      "gain": 38094380.0
+    },
+    {
+      "feature": "week_of_year",
+      "gain": 37723528.0
+    },
+    {
+      "feature": "day",
+      "gain": 36636072.0
+    },
+    {
+      "feature": "lag_1",
+      "gain": 35261544.0
+    },
+    {
+      "feature": "month",
+      "gain": 33986944.0
+    },
+    {
+      "feature": "day_of_month",
+      "gain": 23479894.0
+    },
+    {
+      "feature": "is_weekend",
+      "gain": 23207900.0
+    }
+  ],
+  "best_hyperparameters": {
+    "max_depth": 3,
+    "learning_rate": 0.05,
+    "min_child_weight": 5,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "reg_alpha": 0.1,
+    "reg_lambda": 5.0
+  },
+  "cv_best_mae": 2285.8441345138267,
+  "hyperparameter_notes": {
+    "max_depth": "Limits tree depth; lower values reduce overfitting on noisy daily series.",
+    "learning_rate": "Shrinks each tree's contribution; lower values need more trees but generalize more smoothly.",
+    "min_child_weight": "Requires more evidence before a split; reduces fits to tiny leaf samples.",
+    "subsample": "Row sampling per tree; reduces variance.",
+    "colsample_bytree": "Feature sampling per tree; reduces reliance on a few lags.",
+    "reg_alpha": "L1 regularization on leaf weights.",
+    "reg_lambda": "L2 regularization on leaf weights.",
+    "early_stopping": "Stops boosting when validation MAE stops improving so extra trees are not added after the model starts fitting training noise. The test window is never used for stopping."
+  },
+  "overfitting_note": null,
+  "leakage_audit_summary": {
+    "used_in_model": [
+      "year",
+      "month",
+      "quarter",
+      "day",
+      "day_of_week",
+      "week_of_year",
+      "is_weekend",
+      "day_of_month",
+      "is_month_start",
+      "is_month_end",
+      "lag_1",
+      "lag_7",
+      "lag_14",
+      "lag_30",
+      "rolling_mean_7",
+      "rolling_mean_14",
+      "rolling_mean_30",
+      "rolling_std_7",
+      "rolling_std_30",
+      "rolling_min_7",
+      "rolling_max_7",
+      "Category"
+    ],
+    "excluded": [
+      "same-day Revenue/Units/Margin/prices",
+      "Stock_On_Hand / Reorder_Level / Lead_Time_Days",
+      "Customer_Age / Customer_Gender / Loyalty_Flag",
+      "Brand / Channel / Store_Format / City / Payment_Mode"
+    ]
+  },
+  "recursive_forecast_note": "Multi-step forecasts are recursive: each predicted day is fed into subsequent lag and rolling features. Error can accumulate over longer horizons. No prediction intervals are shown because none were estimated."
+}

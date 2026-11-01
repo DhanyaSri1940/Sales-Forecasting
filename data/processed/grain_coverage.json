@@ -1,0 +1,30 @@
+{
+  "calendar_days": 365,
+  "categories": 8,
+  "cities": 8,
+  "date_category_cells": 2920,
+  "date_category_expected": 2920,
+  "date_category_missing": 0,
+  "date_city_category_cells": 23032,
+  "date_city_category_expected": 23360,
+  "date_city_category_missing": 328,
+  "decision": {
+    "selected_grain": "Date \u00d7 Category",
+    "target": "Daily Revenue",
+    "options_evaluated": {
+      "A_date_category": {
+        "cells": 2920,
+        "missing_cells": 0,
+        "min_invoices_per_cell": 16,
+        "median_invoices_per_cell": 34
+      },
+      "B_date_city_category": {
+        "cells": 23032,
+        "missing_cells": 328,
+        "min_invoices_per_cell": 1,
+        "median_invoices_per_cell": 4
+      }
+    },
+    "rationale": "Date \u00d7 Category is the primary forecasting grain. Every category has sales on every calendar day in 2024 (zero sparsity), with at least 16 invoices per cell. Date \u00d7 City \u00d7 Category is more granular for local replenishment but is sparser (328 empty city-category-days, median 4 invoices) and noisier for daily revenue. City, brand, channel, and store-format views are produced by top-down allocation of category forecasts using trailing 30-day revenue shares. Assumption: recent mix is a reasonable allocator when the model is not trained at that grain."
+  }
+}

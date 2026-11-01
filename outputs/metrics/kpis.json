@@ -1,0 +1,19 @@
+{
+  "total_revenue": 39335134.98467634,
+  "total_units": 299829,
+  "total_cost": 31461449.329379447,
+  "total_margin": 7873685.655296897,
+  "average_margin_pct": 0.20016928017062158,
+  "average_selling_price": 131.1073532983569,
+  "average_invoice_value": 393.3513498467634,
+  "invoice_count": 100000,
+  "city_count": 8,
+  "category_count": 8,
+  "brand_count": 8,
+  "latest_mom_revenue_growth_pct": 0.8930839594958551,
+  "date_min": "2024-01-01",
+  "date_max": "2024-12-30",
+  "customer_age_available_count": 59919,
+  "customer_age_missing_count": 40081,
+  "customer_gender_missing_count": 5048
+}

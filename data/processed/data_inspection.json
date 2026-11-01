@@ -1,0 +1,224 @@
+{
+  "row_count": 100000,
+  "column_count": 21,
+  "column_names": [
+    "Invoice_ID",
+    "Invoice_Date",
+    "City",
+    "Store_Format",
+    "Category",
+    "Brand",
+    "Channel",
+    "Payment_Mode",
+    "Units",
+    "Cost_Price",
+    "Selling_Price",
+    "Revenue",
+    "Cost",
+    "Margin",
+    "Margin_%",
+    "Stock_On_Hand",
+    "Reorder_Level",
+    "Lead_Time_Days",
+    "Customer_Age",
+    "Customer_Gender",
+    "Loyalty_Flag"
+  ],
+  "dtypes": {
+    "Invoice_ID": "int64",
+    "Invoice_Date": "object",
+    "City": "object",
+    "Store_Format": "object",
+    "Category": "object",
+    "Brand": "object",
+    "Channel": "object",
+    "Payment_Mode": "object",
+    "Units": "int64",
+    "Cost_Price": "float64",
+    "Selling_Price": "float64",
+    "Revenue": "float64",
+    "Cost": "float64",
+    "Margin": "float64",
+    "Margin_%": "float64",
+    "Stock_On_Hand": "int64",
+    "Reorder_Level": "int64",
+    "Lead_Time_Days": "int64",
+    "Customer_Age": "float64",
+    "Customer_Gender": "object",
+    "Loyalty_Flag": "int64"
+  },
+  "missing_values": {
+    "Invoice_ID": 0,
+    "Invoice_Date": 0,
+    "City": 0,
+    "Store_Format": 0,
+    "Category": 0,
+    "Brand": 0,
+    "Channel": 0,
+    "Payment_Mode": 0,
+    "Units": 0,
+    "Cost_Price": 0,
+    "Selling_Price": 0,
+    "Revenue": 0,
+    "Cost": 0,
+    "Margin": 0,
+    "Margin_%": 0,
+    "Stock_On_Hand": 0,
+    "Reorder_Level": 0,
+    "Lead_Time_Days": 0,
+    "Customer_Age": 40081,
+    "Customer_Gender": 5048,
+    "Loyalty_Flag": 0
+  },
+  "identical_duplicate_rows": 0,
+  "duplicate_invoice_id_count": 62,
+  "unique_invoice_ids": 99938,
+  "date_parse_failures": 0,
+  "date_range": {
+    "min": "2024-01-01 00:00:00",
+    "max": "2024-12-30 23:57:00",
+    "unique_calendar_days": 365
+  },
+  "unique_cities": [
+    "Ahmedabad",
+    "Bengaluru",
+    "Chennai",
+    "Delhi",
+    "Hyderabad",
+    "Kolkata",
+    "Mumbai",
+    "Pune"
+  ],
+  "unique_categories": [
+    "Beverages",
+    "Dairy",
+    "Fruits",
+    "Grocery",
+    "Home Care",
+    "Personal Care",
+    "Snacks",
+    "Vegetables"
+  ],
+  "unique_brands": [
+    "Amul",
+    "Britannia",
+    "HUL",
+    "ITC",
+    "Nestle",
+    "Parle",
+    "PepsiCo",
+    "Tata"
+  ],
+  "unique_channels": [
+    "Offline",
+    "Omnichannel",
+    "Online"
+  ],
+  "unique_store_formats": [
+    "Express",
+    "Hyper",
+    "Super"
+  ],
+  "unique_payment_modes": [
+    "Card",
+    "Cash",
+    "UPI",
+    "Wallet"
+  ],
+  "customer_gender_values": {
+    "M": 44920,
+    "F": 44905,
+    "O": 5127,
+    "nan": 5048
+  },
+  "loyalty_flag_values": {
+    "0": 70280,
+    "1": 29720
+  },
+  "numeric_checks": {
+    "Units": {
+      "min": 1.0,
+      "max": 5.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Cost_Price": {
+      "min": 10.000526280587676,
+      "max": 199.99965857942047,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Selling_Price": {
+      "min": 10.580914849617862,
+      "max": 289.6995975357467,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Revenue": {
+      "min": 10.653198207070364,
+      "max": 1443.1349854441394,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Cost": {
+      "min": 10.002023841029311,
+      "max": 999.9852191462776,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Margin": {
+      "min": 0.5568704773589577,
+      "max": 447.2074974453094,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Margin_%": {
+      "min": 0.0476212769988791,
+      "max": 0.3103432031511925,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Stock_On_Hand": {
+      "min": 50.0,
+      "max": 499.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Reorder_Level": {
+      "min": 20.0,
+      "max": 79.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Lead_Time_Days": {
+      "min": 3.0,
+      "max": 14.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Customer_Age": {
+      "min": 18.0,
+      "max": 64.0,
+      "negative_count": 0,
+      "zero_count": 0,
+      "non_numeric_count": 0
+    },
+    "Loyalty_Flag": {
+      "min": 0.0,
+      "max": 1.0,
+      "negative_count": 0,
+      "zero_count": 70280,
+      "non_numeric_count": 0
+    }
+  }
+}

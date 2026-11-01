@@ -1,0 +1,46 @@
+{
+  "rows_in": 100000,
+  "rows_out": 100000,
+  "rows_removed_total": 0,
+  "decisions": [
+    {
+      "step": "parse_invoice_datetime",
+      "action": "Parsed Invoice_Date to datetime and derived calendar Date.",
+      "rows_removed": 0
+    },
+    {
+      "step": "identical_duplicates",
+      "action": "No identical full-row duplicates found.",
+      "rows_removed": 0,
+      "identical_duplicate_rows": 0
+    },
+    {
+      "step": "duplicate_invoice_ids",
+      "action": "Kept all rows. Duplicate Invoice_ID values (62 extra occurrences) belong to different dates/cities/categories and are not identical transactions. Invoice_ID is not treated as a unique key.",
+      "rows_removed": 0,
+      "duplicate_invoice_id_occurrences": 62
+    },
+    {
+      "step": "numeric_validation",
+      "action": "Validated required numeric fields. No negatives and no non-numeric values.",
+      "rows_removed": 0
+    },
+    {
+      "step": "outlier_review",
+      "action": "Did not remove high-revenue invoices. Large values may be legitimate multi-unit sales. Revenue 99th percentile=1218.75, max=1443.13.",
+      "rows_removed": 0
+    },
+    {
+      "step": "customer_age",
+      "action": "Did not impute Customer_Age. Missing ages are retained as null and excluded from age-specific analytics. Customer_Age is not used as a forecasting feature.",
+      "missing_count": 40081,
+      "rows_removed": 0
+    },
+    {
+      "step": "customer_gender",
+      "action": "Did not impute Customer_Gender. Missing gender is reported as 'Not available in the current dataset' in gender breakdowns.",
+      "missing_count": 5048,
+      "rows_removed": 0
+    }
+  ]
+}
